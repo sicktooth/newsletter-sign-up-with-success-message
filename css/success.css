@@ -1,3 +1,31 @@
 main {
     display: none;
 }
+article {
+    width: 25vw;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin: 200px auto;
+}
+article h1 {
+    line-height: 1.1;
+    margin: 15px 0;
+    font-size: 45px;
+    font-weight: bold;
+    color: hsl(235, 18%, 26%);
+}
+article p {
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+article button {
+    padding: 15px;
+    background-color: hsl(235, 18%, 26%);
+    color: hsl(0, 0%, 100%);
+    outline-color: hsl(235, 18%, 26%);
+    border-color: hsl(235, 18%, 26%);
+    border-radius: 6px;
+    width: 100%;
+}
