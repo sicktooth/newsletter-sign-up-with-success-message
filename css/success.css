@@ -1,4 +1,4 @@
-main {
+article {
     display: none;
 }
 article {
@@ -28,4 +28,5 @@ article button {
     border-color: hsl(235, 18%, 26%);
     border-radius: 6px;
     width: 100%;
+    cursor: pointer;
 }
