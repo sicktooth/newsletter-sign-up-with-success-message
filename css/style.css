@@ -53,12 +53,17 @@ p {
     display: flex;
     flex-direction: column;
 }
-#main__form label {
+.main__form-head {
+    display: flex;
+    justify-content: space-between;
     font-size: 0.75rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
-#email {
+/* #main__form label {
+    
+} */
+.email {
     padding: 0.9375rem 0.625rem;
     border-radius: 6px;
     outline-color: hsl(231, 7%, 60%);
@@ -66,7 +71,7 @@ p {
     margin-bottom: 1.4375rem;
     cursor: pointer;
 }
-#email ::placeholder {
+.email ::placeholder {
     color: hsl(235, 18%, 26%);
 }
 #main__form button {
@@ -83,4 +88,16 @@ p {
     outline-color: hsl(4, 100%, 67%);
     border-color: hsl(4, 100%, 67%);
     box-shadow: 0px 5px 30px hsl(235, 18%, 26%);
+}
+
+                    /* ERROR MESSAGES */
+.error__message {
+    color: hsl(4, 100%, 67%);
+    display: none;
+}
+.error__input {
+    outline-color: hsla(4, 100%, 67%, 0.87);
+    border-color: hsla(4, 100%, 67%, 0.87);
+    background-color: hsla(4, 100%, 67%, 0.178);
+    color: hsl(4, 100%, 67%);
 }
