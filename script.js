@@ -1,6 +1,10 @@
+const main = document.querySelector("main"),
+    success = document.querySelector("article"),
+    replace = document.querySelector("b")
+    errorLabel = document.querySelector(".error__message"),
+    errorInput = document.querySelector("#email");
 function validate(e) {
-    var main = document.querySelector("main"),
-        success = document.querySelector("article");
+    
     e.preventDefault(); // prevents auto submission i.e email= in the url
 
     // logic in here 
@@ -11,10 +15,19 @@ function validate(e) {
     if (mail.match(regex)) {
         main.style.display = "none";
         success.style.display = "block";
+        replace.innerHTML = mail;
+        errorLabel.style.display = "none";
     } else {
-        alert("Invalid email address");
+        errorLabel.style.display = "block";
+        errorInput.classList.add("error__input");
     }
 
 }
-var form = document.querySelector("#main__form");
+function reset(){
+    main.style.display = "grid";
+    success.style.display = "none";
+}
+var form = document.querySelector("#main__form"),
+    dismiss = document.querySelector(".button");
 form.addEventListener("submit",validate);
+dismiss.addEventListener("click",reset);

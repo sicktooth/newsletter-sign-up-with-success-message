@@ -98,6 +98,6 @@ p {
 .error__input {
     outline-color: hsla(4, 100%, 67%, 0.87);
     border-color: hsla(4, 100%, 67%, 0.87);
-    background-color: hsla(4, 100%, 67%, 0.178);
+    background-color: hsla(4, 100%, 67%, 0.404);
     color: hsl(4, 100%, 67%);
 }
