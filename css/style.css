@@ -64,7 +64,7 @@ p {
     
 } */
 .email {
-    padding: 0.9375rem 0.625rem;
+    padding: 0.9375rem;
     border-radius: 6px;
     outline-color: hsl(231, 7%, 60%);
     border-color: hsl(231, 7%, 60%);
@@ -96,8 +96,11 @@ p {
     display: none;
 }
 .error__input {
-    outline-color: hsla(4, 100%, 67%, 0.87);
-    border-color: hsla(4, 100%, 67%, 0.87);
-    background-color: hsla(4, 100%, 67%, 0.404);
-    color: hsl(4, 100%, 67%);
+    outline-color: hsla(4, 100%, 67%, 0.87) !important;
+    border-color: hsla(4, 100%, 67%, 0.87) !important;
+    background-color: hsla(4, 100%, 67%, 0.23) !important;
+    color: hsl(4, 100%, 67%) !important;
+}
+input:-internal-autofill-selected {
+    background-color: inherit !important;
 }

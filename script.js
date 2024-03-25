@@ -1,20 +1,20 @@
-const main = document.querySelector("main"),
-    success = document.querySelector("article"),
+const main = $("main"),
+    success = $("article"),
     replace = document.querySelector("b")
     errorLabel = document.querySelector(".error__message"),
     errorInput = document.querySelector("#email");
+    
 function validate(e) {
     
     e.preventDefault(); // prevents auto submission i.e email= in the url
 
     // logic in here 
-
     var mail = document.getElementById("email").value;
     var regex = /^([a-zA-Z0-9\._]+)@(gmail|proton|outlook|hotmail|yahoo|mail|aol|zoho|icloud|gmx|yandex|hushmail|fastmail|tutanota)+.([a-z]+)(.[a-z]+)?$/;
 
     if (mail.match(regex)) {
-        main.style.display = "none";
-        success.style.display = "block";
+        main.hide().fadeOut(1000);
+        success.fadeIn(1000);
         replace.innerHTML = mail;
         errorLabel.style.display = "none";
     } else {
@@ -24,8 +24,9 @@ function validate(e) {
 
 }
 function reset(){
-    main.style.display = "grid";
-    success.style.display = "none";
+    main.css("display", "grid");
+    success.fadeOut("slow");
+    errorInput.value = "";
 }
 var form = document.querySelector("#main__form"),
     dismiss = document.querySelector(".button");
