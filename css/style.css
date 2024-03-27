@@ -23,7 +23,8 @@ main {
 }
 
 section {
-    padding: 5.625rem 1.5rem;
+    padding: 0 1.5rem;
+    margin: auto 0;
 }
 
 .main__U-list {
