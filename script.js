@@ -27,6 +27,7 @@ function reset(){
     success.fadeOut(1000);
     main.fadeIn(1000);
     errorInput.val("");
+    errorInput.removeClass("error__input");
 }
 var form = $("#main__form"),
     dismiss = $(".button");
