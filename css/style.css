@@ -61,9 +61,11 @@ p {
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
-/* #main__form label {
-    
-} */
+
+.mobile__illustration {
+    display: none;
+}
+
 .email {
     padding: 0.9375rem;
     border-radius: 6px;
@@ -71,6 +73,7 @@ p {
     border-color: hsl(231, 7%, 60%);
     margin-bottom: 1.4375rem;
     cursor: pointer;
+    font-size: 17px;
 }
 .email ::placeholder {
     color: hsl(235, 18%, 26%);
@@ -83,6 +86,7 @@ p {
     border-color: hsl(235, 18%, 26%);
     border-radius: 6px;
     cursor: pointer;
+    font-size: 17px;
 }
 #main__form button:hover {
     background-image: linear-gradient(to right,hsl(4, 100%, 67%) 55%, hsl(4, 100%, 60%));

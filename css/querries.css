@@ -22,6 +22,11 @@
     main {
         width: 64.109vw;
     }
+    article {
+        width: 29vw;
+        padding: 1.5rem;
+        margin: 3.5rem auto;
+    }
 }
 @media only screen and (max-width: 1149px) {
     main {
@@ -32,9 +37,62 @@
     main {
         width: 79.637vw;
     }
+    article {
+        width: 39vw;
+    }
 }
 @media only screen and (max-width:960px) {
     main {
         width: 85.637vw;
+    }
+}
+@media only screen and (max-width:769px) {
+    main {
+        grid-template-columns: 1fr;
+        width: 68vw;
+        height: auto;
+        padding: 0;
+    }
+    article {
+        width: 49vw;
+    }
+    section {
+        padding: 1.25rem;
+    }
+    .desktop__illustration {
+        display: none;
+    }
+    .mobile__illustration {
+        display: block;
+        width: 100%;
+    }
+    aside {
+        grid-row: 1 / 2;
+    }
+}
+@media only screen and (max-width: 597px) {
+    main {
+        width: 85.637vw;
+    }
+}
+@media only screen and (max-width: 431px) {
+    main {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    article {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding-top: 5rem;
+    }
+    article button {
+        margin-top: 70%;
+    }
+}
+@media only screen and (max-width: 280px) {
+    .email {
+        font-size: 15px;
     }
 }
