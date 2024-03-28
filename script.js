@@ -10,7 +10,7 @@ function validate(e) {
 
     // logic in here 
     var mail = $("#email").val();
-    var regex = /^([a-zA-Z0-9\._]+)@(gmail|proton|outlook|hotmail|yahoo|mail|aol|zoho|icloud|gmx|yandex|hushmail|fastmail|tutanota)+.([a-z]+)(.[a-z]+)?$/; // only popular email services are supported
+    var regex = /^([\w\._]+)@(gmail|proton|outlook|hotmail|yahoo|mail|aol|zoho|icloud|gmx|yandex|hushmail|fastmail|tutanota)+.([a-z]+)(.[a-z]+)?$/; // only popular email services are supported
 
     if (mail.match(regex)) { // checks the input against the regex
         main.hide().fadeOut(1000);
