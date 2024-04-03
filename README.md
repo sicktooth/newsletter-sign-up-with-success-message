@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/sicktooth/newsletter-sign-up-with-success-message)
-- Live Site URL: [Live site URL](https://github.com/sicktooth/newsletter-sign-up-with-success-message/deployments/github-pages)
+- Live Site URL: [Live site URL](https://sicktooth.github.io/newsletter-sign-up-with-success-message/)
 
 ## My process
 
